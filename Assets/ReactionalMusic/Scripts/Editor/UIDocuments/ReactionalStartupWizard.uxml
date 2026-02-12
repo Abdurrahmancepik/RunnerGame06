@@ -1,0 +1,135 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/ReactionalMusic/Scripts/Editor/USS/ReactionalHub.uss?fileID=7433441132597879392&amp;guid=2d1dcf40fa3239345948935af98a47b6&amp;type=3#ReactionalHub" />
+    <ui:VisualElement name="window-root" style="width: 100%; height: 100%;">
+        <ui:VisualElement name="header-container" style="flex-grow: 0; flex-direction: row; max-height: 100px; background-color: rgba(0, 0, 0, 0.16); flex-shrink: 1; width: 100%; height: 10%;">
+            <ui:VisualElement name="header-logo" style="background-image: resource(&apos;ReactionalIcon&apos;); width: 10%; height: 100%; min-height: auto; min-width: auto; max-width: 100px; -unity-background-scale-mode: scale-to-fit;" />
+            <ui:Label text="REACTIONAL" name="header-label" style="margin-right: 10%; flex-shrink: 1; flex-grow: 1; -unity-text-align: middle-center; width: 90%; -unity-font-style: bold; font-size: 26px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="content-container" style="flex-direction: row; width: 100%; height: 80%;">
+            <ui:VisualElement name="content-button-container" style="width: 25%; height: 100%; justify-content: center; padding-left: 10px;">
+                <ui:Button text="Reactional Manger and Components" name="button-container-step-1" />
+                <ui:Button text="Call To Action" name="button-container-step-2" />
+                <ui:Button text="Ready to Advance" name="button-container-step-3" />
+                <ui:Button text="Reactional Hub" name="button-container-step-4" />
+                <ui:Button text="Explore Reactional" name="button-container-step-5" />
+            </ui:VisualElement>
+            <ui:ScrollView horizontal-scroller-visibility="Hidden" name="content-scroll-view" style="width: 75%; align-self: center; flex-grow: 1; height: 90%;">
+                <ui:VisualElement name="step-one-container" class="custom-unity__content-container-page" style="display: flex;">
+                    <ui:Label text="Reactional Manger and Components" name="step-title-label" class="custom-unity-label__heading" />
+                    <ui:VisualElement name="reactional-manager-container" style="margin-bottom: 13px; flex-shrink: 0;">
+                        <ui:Label tabindex="-1" text="The Reactional Manager is a singleton game object that handles the project setup and settings, which will then be passed to the Reactional Engine on load." parse-escape-sequences="true" display-tooltip-when-elided="true" name="reactional-manager-label" class="custom-unity-label__content" />
+                        <ui:Button text="Click to add Reactional Manager? (Required)" parse-escape-sequences="true" display-tooltip-when-elided="true" name="reactional-manager-button" class="wizard-button" style="align-self: center; height: auto;" />
+                    </ui:VisualElement>
+                    <ui:Label text="Components:" name="conponents-title-label" class="wizard-sub-title custom-unity-label__heading" />
+                    <ui:VisualElement name="reactional-playback-container" style="margin-bottom: 13px; flex-shrink: 0;">
+                        <ui:Label tabindex="-1" text="A barebones script which demonstrates a few basic API calls, such as loading tracks, assets, and starting playback." parse-escape-sequences="true" display-tooltip-when-elided="true" name="reactional-playback-label" class="custom-unity-label__content" />
+                        <ui:Button text="Click to add Reactional Playback? (Required)" parse-escape-sequences="true" display-tooltip-when-elided="true" name="reactional-playback-button" class="wizard-button" style="align-self: center; height: auto;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="reactional-component-container" style="margin-bottom: 13px; flex-shrink: 0; display: none;">
+                        <ui:Label tabindex="-1" text="Placeholder for Component Text. Placeholder for Component Text. Placeholder for Component Text. Placeholder for Component Text. " parse-escape-sequences="true" display-tooltip-when-elided="true" name="reactional-component-label" style="white-space: normal; margin-bottom: 10px;" />
+                        <ui:Button text="Click to add Reactional Component?" parse-escape-sequences="true" display-tooltip-when-elided="true" name="reactional-component-button" class="wizard-button" style="align-self: center; height: auto;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="step-two-container" class="custom-unity__content-container-page" style="display: none; flex-grow: 1; flex-shrink: 0; justify-content: center; align-self: center;">
+                    <ui:Label text="Call To Action" name="step-title-label" class="custom-unity-label__heading" style="-unity-text-align: middle-center;" />
+                    <ui:Label text="Reactional Bundles package your chosen Tracks and Themes—whether composed from scratch in Composer or selected from existing Platform assets—into a single proprietary format, ready for seamless integration into your game engine." name="reactional-bundles-label" class="custom-unity-label__content" />
+                    <ui:Label tabindex="-1" text="In order for the engine to apply the magic of Reactional into your game, you would need to add such a bundle into your &quot;Assets/StreamingAssets/Reactional/&quot; folder. To obtain a bundle there are a few ways to do so:" parse-escape-sequences="true" display-tooltip-when-elided="true" name="reactional-bundles-label" class="custom-unity-label__content" />
+                    <ui:VisualElement name="reactional-bundles-container" style="margin-top: 10px; flex-direction: row; width: 100%;">
+                        <ui:VisualElement name="component-container" style="width: 50%; flex-direction: column; margin-right: 10px; margin-left: 10px;">
+                            <ui:Label tabindex="-1" text="Option 1 : Create New Bundle in Reactional" parse-escape-sequences="true" display-tooltip-when-elided="true" name="component-label-header" class="custom-unity-label__sub-heading" />
+                            <ui:Label tabindex="-1" text="Login to Reactional, and create your very own bundle with your own tracks and themes" parse-escape-sequences="true" display-tooltip-when-elided="true" name="component-label" class="custom-unity-label__content" style="width: 100%; height: 40%;" />
+                            <ui:Button text="Login to Reactional" parse-escape-sequences="true" display-tooltip-when-elided="true" name="reactional-login-button" class="wizard-button" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="component-container" style="width: 50%; flex-direction: column; min-height: 225px; margin-right: 10px; margin-left: 10px;">
+                            <ui:Label tabindex="-1" text="Option 2 : Use Reactional Free Demo Bundle" parse-escape-sequences="true" display-tooltip-when-elided="true" name="component-label-header" class="custom-unity-label__sub-heading" />
+                            <ui:Label tabindex="-1" text="Use this free bundle to experience Reactional for yourself. It features the Mirror Drift theme and a selection of additional tracks." parse-escape-sequences="true" display-tooltip-when-elided="true" name="component-label" class="wizard-addition-label custom-unity-label__content" style="width: 100%; height: 40%;" />
+                            <ui:Button text="Sync Free Bundle" parse-escape-sequences="true" display-tooltip-when-elided="true" name="reactional-free-bundle-button" class="wizard-button" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="step-three-container" class="custom-unity__content-container-page" style="display: none; flex-grow: 1; flex-shrink: 0; justify-content: center; align-self: center;">
+                    <ui:Label text="Ready To Advance" name="step-title-label" class="custom-unity-label__heading" />
+                    <ui:Label tabindex="-1" text="You’re all set to start building your game. Feel free to test your playback with Reactional Controls, check out built-in scripts and prefabs, or dive into our demo scene to see Reactional in action." parse-escape-sequences="true" display-tooltip-when-elided="true" name="reactional-bundles-label" class="custom-unity-label__content" />
+                    <ui:VisualElement name="reactional-bundles-container" class="wizard-step-container" style="margin-top: 10px; flex-direction: row; width: 100%;">
+                        <ui:VisualElement name="component-container" style="width: 50%; flex-direction: column; margin-right: 10px; margin-left: 10px;">
+                            <ui:Label tabindex="-1" text="Reactional Hub" parse-escape-sequences="true" display-tooltip-when-elided="true" name="component-label-header" class="custom-unity-label__sub-heading" />
+                            <ui:Label tabindex="-1" text="Test your playback with Reactional Controls tab. Explore its various functionalities and uses." parse-escape-sequences="true" display-tooltip-when-elided="true" name="component-label" class="custom-unity-label__content" style="width: 100%; height: 40%;" />
+                            <ui:Button text="Jump to Step" parse-escape-sequences="true" display-tooltip-when-elided="true" name="reactional-editor-page-button" class="wizard-button" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="component-container" style="width: 50%; flex-direction: column; min-height: 225px; margin-right: 10px; margin-left: 10px;">
+                            <ui:Label tabindex="-1" text="Explore Reactional" parse-escape-sequences="true" display-tooltip-when-elided="true" name="component-label-header" class="custom-unity-label__sub-heading" />
+                            <ui:Label tabindex="-1" text="With the help of our demo scene, look through the numerous sample scripts and prefabs to build your own custom code from." parse-escape-sequences="true" display-tooltip-when-elided="true" name="component-label" class="custom-unity-label__content" style="width: 100%; height: 40%;" />
+                            <ui:Button text="Jump to Step" parse-escape-sequences="true" display-tooltip-when-elided="true" name="reactional-explore-page-button" class="wizard-button" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="step-four-container" class="custom-unity__content-container-page" style="display: none; flex-grow: 1; flex-shrink: 0; justify-content: center; align-self: center;">
+                    <ui:Label text="Reactional Hub" name="step-title-label" class="custom-unity-label__heading" />
+                    <ui:VisualElement name="reactional-tool-container">
+                        <ui:Label tabindex="-1" text="A centralized utility interface for managing and previewing music reactivity in your project. Use the Controls tab to interact with macros, stingers, parts, and playables in real-time; explore loaded tracks and themes via the Projects tab; and access documentation and helpful resources through the Help tab." parse-escape-sequences="true" display-tooltip-when-elided="true" name="reactional-tool-label" class="custom-unity-label__content" />
+                        <ui:VisualElement name="component-container" style="width: 100%; flex-direction: row; min-height: 10px; justify-content: space-around; margin-bottom: 10px;">
+                            <ui:Label tabindex="-1" text="Open Reactional Hub?" parse-escape-sequences="true" display-tooltip-when-elided="true" name="component-label" class="custom-unity-label__content" />
+                            <ui:VisualElement name="component-button-container" style="flex-direction: row;">
+                                <ui:Button text="Click to Open" parse-escape-sequences="true" display-tooltip-when-elided="true" name="reactional-tool-button" style="align-self: center; height: auto;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:Label text="Functionalities:" name="conponents-title-label" class="custom-unity-label__heading" />
+                    <ui:VisualElement name="reactional-tool-description-container">
+                        <ui:VisualElement name="component-container" style="width: 100%; min-height: 120px; margin-bottom: 20px; flex-direction: row;">
+                            <ui:Label tabindex="-1" text="The Playlist controls  lets the user control the track playback and select any tracks that are included in the bundle." parse-escape-sequences="true" display-tooltip-when-elided="true" name="component-label" class="custom-unity-label__content" style="width: 60%;" />
+                            <ui:VisualElement name="component-image" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/ReactionalMusic/Scripts/Editor/WizardImages/EditorToolTrackControlsImage.png?fileID=2800000&amp;guid=9a78fa9ec76203e4fa15a2e3d2093192&amp;type=3#EditorToolTrackControlsImage&apos;); max-width: 40%; align-self: center; width: 40%; flex-shrink: 0; height: 100%; -unity-background-scale-mode: scale-to-fit;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="component-container" style="width: 100%; flex-direction: row; min-height: 120px; margin-bottom: 20px;">
+                            <ui:Label tabindex="-1" text="The Macro controls lets the user control the different macros that are built within the bundle." parse-escape-sequences="true" display-tooltip-when-elided="true" name="component-label" class="custom-unity-label__content" style="width: 60%;" />
+                            <ui:VisualElement name="component-image" style="background-image: url(&apos;project://database/Assets/ReactionalMusic/Scripts/Editor/WizardImages/EditorToolThemeControlsImage.png?fileID=2800000&amp;guid=5af5b605f94fbca4e893b414014d34cd&amp;type=3#EditorToolThemeControlsImage&apos;); align-self: center; width: 40%; height: 100%; -unity-background-scale-mode: scale-to-fit;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="step-five-container" class="custom-unity__content-container-page" style="display: none; flex-grow: 1; flex-shrink: 0; justify-content: center; align-self: center;">
+                    <ui:Label text="Explore Reactional" name="step-title-label" class="custom-unity-label__heading" style="-unity-text-align: middle-center;" />
+                    <ui:VisualElement name="reactional-manager-container" class="wizard-step-container" style="margin-bottom: 20px;">
+                        <ui:Label tabindex="-1" text="TODO: The Demo scene offers insight to functionalities." parse-escape-sequences="true" display-tooltip-when-elided="true" name="reactional-manager-label" class="custom-unity-label__content" />
+                        <ui:VisualElement name="component-container" style="flex-direction: row; justify-content: space-around;">
+                            <ui:Label tabindex="-1" text="Open Demo Scene in Editor?" parse-escape-sequences="true" display-tooltip-when-elided="true" name="component-label" class="custom-unity-label__content" />
+                            <ui:VisualElement name="component-button-container" style="flex-direction: row;">
+                                <ui:Button text="Click to Open Scene" parse-escape-sequences="true" display-tooltip-when-elided="true" name="reactional-demo-scene-button" style="align-self: center; height: auto;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:Label text="Prefabs:" name="components-title-label" class="custom-unity-label__heading" />
+                    <ui:VisualElement name="reactional-component-container" class="wizard-step-container">
+                        <ui:Label tabindex="-1" text="Definitions of component. noun. an artifact that is one of the individual parts of which a composite entity is made up; especially a part that can be separated from or attached to a system. “spare components for cars” “a component or constituent element of a system”" parse-escape-sequences="true" display-tooltip-when-elided="true" name="reactional-component-label" class="custom-unity-label__content" />
+                        <ui:VisualElement name="component-container" style="width: 100%; flex-direction: row; min-height: 10px; justify-content: space-around;">
+                            <ui:Label tabindex="-1" text="Add Reactional Component?" parse-escape-sequences="true" display-tooltip-when-elided="true" name="component-label" class="custom-unity-label__content" />
+                            <ui:VisualElement name="component-button-container" style="flex-direction: row;">
+                                <ui:Button text="Click to Add" parse-escape-sequences="true" display-tooltip-when-elided="true" name="reactional-tool-button" style="align-self: center; height: auto;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:Label text="Scripts:" name="components-title-label" class="custom-unity-label__heading" />
+                    <ui:VisualElement name="reactional-component-container" class="wizard-step-container">
+                        <ui:Label tabindex="-1" text="Definitions of component. noun. an artifact that is one of the individual parts of which a composite entity is made up; especially a part that can be separated from or attached to a system. “spare components for cars” “a component or constituent element of a system”" parse-escape-sequences="true" display-tooltip-when-elided="true" name="reactional-component-label" class="custom-unity-label__content" />
+                        <ui:VisualElement name="component-container" style="width: 100%; flex-direction: row; min-height: 10px; justify-content: space-around;">
+                            <ui:Label tabindex="-1" text="Add Reactional Component?" parse-escape-sequences="true" display-tooltip-when-elided="true" name="component-label" class="custom-unity-label__content" />
+                            <ui:VisualElement name="component-button-container" style="flex-direction: row;">
+                                <ui:Button text="Click to Add" parse-escape-sequences="true" display-tooltip-when-elided="true" name="reactional-tool-button" style="align-self: center; height: auto;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:ScrollView>
+        </ui:VisualElement>
+        <ui:VisualElement name="footer-container" style="height: 10%; justify-content: space-around; flex-direction: row;">
+            <ui:VisualElement name="footer-close-container" style="width: 33.33%; justify-content: center;">
+                <ui:Button text="Close Wizard" name="footer-close-button" class="wizard-button" style="align-self: center; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; width: 50%; height: 50%;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="footer-left-container" style="width: 33.33%; justify-content: center;">
+                <ui:Button text="Prev" parse-escape-sequences="true" display-tooltip-when-elided="true" name="footer-prev-button" class="wizard-button" style="flex-shrink: 0; align-self: center; height: 50%; width: 50%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="footer-right-container" style="width: 33.33%; justify-content: center;">
+                <ui:Button text="Next" parse-escape-sequences="true" display-tooltip-when-elided="true" name="footer-next-button" class="wizard-button" style="flex-shrink: 0; align-self: center; height: 50%; width: 50%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

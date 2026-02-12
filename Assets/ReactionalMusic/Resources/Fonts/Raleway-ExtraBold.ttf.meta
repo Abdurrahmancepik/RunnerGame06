@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: 13e374ed1a4d73d4b88e9387281986e4
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Raleway
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 250971
+  packageName: Reactional Music System
+  packageVersion: 1.0.3
+  assetPath: Assets/ReactionalMusic/Resources/Fonts/Raleway-ExtraBold.ttf
+  uploadId: 818124

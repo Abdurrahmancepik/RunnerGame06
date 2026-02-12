@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 2d1dcf40fa3239345948935af98a47b6
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 12385, guid: 0000000000000000e000000000000000, type: 0}
+  disableValidation: 0
+AssetOrigin:
+  serializedVersion: 1
+  productId: 250971
+  packageName: Reactional Music System
+  packageVersion: 1.0.3
+  assetPath: Assets/ReactionalMusic/Scripts/Editor/USS/ReactionalHub.uss
+  uploadId: 818124

@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/ReactionalMusic/Scripts/Editor/USS/ReactionalHub.uss?fileID=7433441132597879392&amp;guid=2d1dcf40fa3239345948935af98a47b6&amp;type=3#ReactionalHub" />
+    <ui:VisualElement name="window-root" style="flex-grow: 1;">
+        <ui:VisualElement name="header-container" style="flex-grow: 0; flex-direction: row; max-height: 100px; background-color: rgba(0, 0, 0, 0.16); flex-shrink: 1; width: 100%; height: 10%; margin-bottom: 20px;">
+            <ui:VisualElement name="header-logo" style="background-image: resource(&apos;ReactionalIcon&apos;); width: 10%; height: 100%; min-height: auto; min-width: auto; max-width: 100px; -unity-background-scale-mode: scale-to-fit;" />
+            <ui:Label text="REACTIONAL" name="header-label" style="margin-right: 10%; flex-shrink: 1; flex-grow: 1; -unity-text-align: middle-center; width: 90%; -unity-font-style: bold; font-size: 26px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="login-container" class="custom-unity__content-container-page" style="display: flex; margin-bottom: 20px;">
+            <ui:Label text="Login:" name="step-title-label" class="custom-unity-label__heading" />
+            <ui:VisualElement name="reactional-manager-container" style="margin-bottom: 13px; flex-shrink: 0;">
+                <ui:Label tabindex="-1" text="Enter the same e-mail that was used to sign up to the Reactional Platform." parse-escape-sequences="true" display-tooltip-when-elided="true" name="reactional-login-label" class="custom-unity-label__content" />
+                <ui:TextField picking-mode="Ignore" keyboard-type="EmailAddress" name="reactional-login-email-text-field" style="margin-bottom: 20px;" />
+                <ui:Button text="Validate" parse-escape-sequences="true" display-tooltip-when-elided="true" name="reactional-login-button" class="wizard-button" style="align-self: center; height: auto;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 5f40f2e0cbccdc64380388d581986670
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 250971
+  packageName: Reactional Music System
+  packageVersion: 1.0.3
+  assetPath: Assets/ReactionalMusic/Scripts/Editor/ReactionalVSAttribution.cs
+  uploadId: 818124

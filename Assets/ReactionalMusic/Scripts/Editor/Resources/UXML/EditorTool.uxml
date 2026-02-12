@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:ScrollView style="flex-grow: 1;">
+        <ui:VisualElement name="root" style="align-self: center; align-items: center; justify-content: flex-start; flex-grow: 1; width: 100%; min-width: 350px; max-width: 600px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 12px; padding-right: 12px; padding-bottom: 12px; padding-left: 12px;">
+            <ui:VisualElement name="Header" style="flex-grow: 1; flex-direction: row; align-self: stretch; justify-content: center; align-items: center; max-height: 100px; margin-top: 8px; margin-right: 8px; margin-bottom: 0; margin-left: 8px;">
+                <ui:VisualElement name="Logo" style="flex-grow: 1; background-image: resource(&apos;ReactionalIcon&apos;); width: 100%; height: 100px; -unity-background-scale-mode: scale-to-fit; -unity-slice-scale: 1px; min-height: auto; min-width: auto; -unity-text-align: upper-left; -unity-background-image-tint-color: rgb(155, 84, 255); max-width: 100px;" />
+                <ui:Label tabindex="-1" text="Reactional Editor Tool" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ReactionalEditorTool" style="-unity-font-style: bold; font-size: 16px; margin-top: 8px; margin-right: 8px; margin-bottom: 8px; margin-left: 8px;" />
+            </ui:VisualElement>
+            <ui:Button text="Customize your music!" parse-escape-sequences="true" display-tooltip-when-elided="true" name="CustomizeYourMusicButton" style="border-left-color: rgba(19, 180, 0, 0); border-right-color: rgba(19, 180, 0, 0); border-top-color: rgba(19, 180, 0, 0); border-bottom-color: rgba(19, 180, 0, 0); background-color: rgb(19, 180, 0); -unity-background-image-tint-color: rgba(255, 255, 255, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px; border-bottom-left-radius: 8px; align-self: stretch; align-items: stretch; margin-top: 8px; margin-right: 8px; margin-bottom: 8px; margin-left: 8px; padding-top: 8px; padding-right: 8px; padding-bottom: 8px; padding-left: 8px; -unity-font-style: bold;" />
+            <ui:VisualElement name="PlaylistControls" style="background-color: rgba(0, 0, 0, 0.16); border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px; border-bottom-left-radius: 8px; margin-top: 8px; margin-right: 8px; margin-bottom: 8px; margin-left: 8px; padding-top: 8px; padding-right: 8px; padding-bottom: 8px; padding-left: 8px; align-self: stretch; flex-grow: 0;">
+                <ui:Foldout text="Playlist" name="PlaylistControls" style="align-self: stretch; -unity-font-style: bold; font-size: 15px; flex-grow: 0; align-items: stretch; justify-content: flex-start; flex-shrink: 1;">
+                    <ui:IMGUIContainer name="playlistContainer" style="width: 100%; height: 100%; min-height: 10px;" />
+                </ui:Foldout>
+            </ui:VisualElement>
+            <ui:VisualElement name="ThemeControls" style="background-color: rgba(0, 0, 0, 0.16); border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px; border-bottom-left-radius: 8px; margin-top: 8px; margin-right: 8px; margin-bottom: 8px; margin-left: 8px; padding-top: 8px; padding-right: 8px; padding-bottom: 8px; padding-left: 8px; max-height: none; max-width: none; min-width: auto; align-self: stretch; align-items: stretch; justify-content: flex-start;">
+                <ui:Foldout text="Theme" name="Theme" style="font-size: 15px; -unity-font-style: bold; align-self: stretch; justify-content: flex-start; min-height: auto; height: 100%;">
+                    <ui:IMGUIContainer name="themeContainer" style="width: 100%; height: 100%; min-width: auto; min-height: auto; justify-content: flex-start; flex-grow: 1;" />
+                </ui:Foldout>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:ScrollView>
+</ui:UXML>

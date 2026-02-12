@@ -1,0 +1,72 @@
+.unity-button {
+    white-space: normal;
+    overflow: visible;
+}
+
+.unity-label {
+    white-space: normal;
+}
+
+.unity-scroll-view__content-container {
+    flex-grow: 1;
+}
+
+.custom-unity__content-container-page {
+    width: 95%;
+    background-color: rgba(0, 0, 0, 0.16);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 34px;
+    padding-right: 34px;
+    display: flex;
+    align-self: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-shrink: 0;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-unity-label__heading {
+    font-size: 16px;
+    -unity-font-style: bold;
+    margin-bottom: 12px;
+    -unity-text-align: middle-center;
+}
+
+.custom-unity-label__sub-heading {
+    width: 100%;
+    flex-grow: 0;
+    height: 20%;
+    -unity-text-align: middle-center;
+    font-size: 14px;
+    -unity-font-style: bold;
+}
+
+.custom-unity-label__content {
+    white-space: normal;
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+    -unity-text-align: middle-center;
+}
+
+.prototype-track-selective {
+    height: 100%;
+    width: 100%;
+    margin-right: 8px;
+    margin-left: 8px;
+    flex-shrink: 1;
+    max-width: 200px;
+    max-height: 200px;
+    -unity-background-scale-mode: scale-to-fit;
+    background-image: resource('ReactionalIcon');
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.prototype-track-card-label {
+    margin-left: 2%;
+    white-space: nowrap;
+}
